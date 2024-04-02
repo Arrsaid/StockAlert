@@ -63,7 +63,7 @@ text = (f"Dear Said,\n \nI hope this email finds you well."
         f"This movement may be of interest to you. "
         f"\n \nBest regards,\n \nYour Python project.")
 
-if p >= 1:
+if p >= 5:
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(user=s_email, password=password)
